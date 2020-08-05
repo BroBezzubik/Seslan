@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    {% if form.errors %}
+    <p>Произошла ошибка!</p>
+    {% endif %}
+    <form method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        
+        {{ form.username.label_tag}}
+        {{ form.username }}
+        
+        {{ form.username.label_tag}}
+        {{ form.password }}
+
+        <input type="submit" value="login">
+        <input type="hidden" name="next" value="{{ next }}">
+    </form>
+</body>
+</html>
+
