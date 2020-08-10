@@ -1,0 +1,77 @@
+{% extends "game/base.html" %}
+{% load static %}
+
+{% block title %} {% endblock %}
+
+{% block styles %}
+{% endblock %}
+
+{% block header %}
+<div class="game-header">
+    <ul>
+        <li></li>
+        <h3>MAP</h3>
+        <li></li>
+    </ul> 
+</div>
+{% endblock %}
+
+{% block left-side-bar %}
+<div id="left-side-bar">
+    <ul class="list-group user-panel">
+        <li class="list-group-item"><p>{{ UserName }}<p></li>
+        {% if Moderator%}
+            {% load admin_urls %}
+            <li class="list-group-item">
+                <a href="{{ timeFlow }}">time flow</a>
+            </li>
+            <li class="list-group-item">
+                <a href="{{ addEventUrl }}">add Event</a>
+            </li>
+            <li class="list-group-item"><a href="{{ addDescriptionUrl }}">add Description</a></li>
+        {%endif%}
+        <li class="list-group-item"><a href='{% url "logout" %}'><p>Log out</p></a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block right-side-bar %}
+<div id='right-side-bar'>
+    <ul id="news-list" class="list-group news-panel">
+        <li class="list-group-item">
+            <div class="news-header">
+                <h3> NEWS </h3>
+            </div>
+        </li>
+    </ul>
+</div> 
+{% endblock %}
+
+{% block content %}
+<button type="button" id='left-side-bar-collapse' class="btn btn-primary">Hide user panel</button>
+<button type="button" id='right-side-bar-collapse' class="btn btn-primary">Hide News</button>
+<div id='context-menu'>
+    <ul class='list-group'>
+        <li id="object-text" class="list-group-item context-menu-item"><p id='context-menu-event-name'>Some object<p></li>
+        <li type="button" id='context-menu-infomation' class="list-group-item context-menu-item"><a id="information-url">Information</a></li>
+        <li type="button" id='context-menu-moveTo' class="list-group-item context-menu-item"><p>MoveTo</p></li>
+    </ul>
+</div>
+
+<div id="game-container">
+</div>
+
+{% endblock %}
+
+{% block status-bar %}
+    <div class="status-bar">
+        <p> Game: {{ game_id }}</p>
+    </div>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'Konva/konva.js' %}"></script>
+<script src="{% static 'game/js/sidebars.js' %}"></script>
+<script src="{% static 'game/js/game.js' %}"></script>
+{% endblock %}
+

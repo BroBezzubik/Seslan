@@ -25,7 +25,9 @@ SECRET_KEY = 'k89-e)!8_^b=)j_l4j-n73mizmtnm=9h&(z9(jj%ehrc&g0)@1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "seslan.local",
+]
 
 
 # Application definition
@@ -126,4 +128,21 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static_root')
+
+MEDIA_URL = '/media/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
 LOGIN_REDIRECT_URL = '/game/'
+
+CSRF_HEADER_NAME = "HTTP_X_XSRF_TOKEN"
+
+# Django rest framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication'
+    ]
+}
