@@ -1,7 +1,17 @@
 from django.contrib import admin
 from django.contrib.postgres import fields
 from django_json_widget.widgets import JSONEditorWidget
-from .models import Log, Game, Proffesion, Game_event_image, Game_event, Player, Map, Description
+from .models import Log, Game, Proffesion, Game_event_image, Game_event, Player, Map, Description, Information
+
+@admin.register(Proffesion)
+class PreoffesionAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Information)
+class InformationAdmin(admin.ModelAdmin):
+    list_display = [
+        'name'
+    ]
 
 @admin.register(Log)
 class LogAdmin(admin.ModelAdmin):
