@@ -46,7 +46,7 @@ class Game_event_image(models.Model):
 
 
 class Game_event(models.Model):
-    game = models.ForeignKey(Game)
+    game = models.ForeignKey(Game, on_delete=models.CASCADE)
     name = models.CharField(default="Some object", max_length=20)
     image = models.ForeignKey(Game_event_image, on_delete=models.PROTECT)
     time = models.FloatField(default=0)
@@ -83,4 +83,6 @@ class Description(models.Model):
     event = models.ForeignKey(Game_event, on_delete=models.CASCADE)
     information = models.ForeignKey(Information, on_delete=models.CASCADE)
 
-
+    def __str__(self):
+        return self.event.name
+    

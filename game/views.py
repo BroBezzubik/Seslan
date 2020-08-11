@@ -33,19 +33,25 @@ def game(request, game_id):
 
 def event_info(request, event_id):
     if request.method == 'GET' and request.user.is_authenticated:
+
+        game_id = request.COOKIES['game_id']
         player = models.Player.objects.get(user_id=request.user.id)
-        descriptions = models.Description.objects.filter(player__id = player.id, event__id = event_id)
+        event = models.Game_event.objects.get(pk = event_id)
+        descriptions = models.Description.objects.filter(player_id = player.id).filter(event__game = game_id).filter(event = event)
+        print(descriptions)
         
         if not descriptions:
             raise Http404("Вам недоступна данная информация")
+        
+        descriptions_array = []
+        for description in descriptions:
+            description_text = "{}: {}".format(description.information.name, description.information.text)
+            descriptions_array.append(description_text)
 
-        desc = descriptions.get(player_id = player.id, event_id=event_id)
-        event_description = desc.information
-        url = desc.event.image.file_field.url
+        event_description = descriptions_array
+        url = event.image.file_field.url
 
-        print(desc)
         return render(request, "game/base_event_info.html", {"image_url": url, "event_description" : event_description})
-    
     else:  
         raise Http404("Что то пошло не так")
 
@@ -66,25 +72,42 @@ def ajax_get_game_map(request):
 
 def ajax_update_events(request):
     if request.method == 'POST' and request.user.is_authenticated:
+        
+        game_id = request.COOKIES['game_id']
         player = models.Player.objects.get(user_id=request.user.id)
-        descriptions = models.Description.objects.filter(player_id = player.id)
+        game_events = models.Game_event.objects.filter(game_id = game_id)
+        descriptions = models.Description.objects.filter(player_id = player.id, event__game = game_id)
         game_time = models.Game.objects.get(id = request.COOKIES['game_id']).game_time
+        
         response_json = {}
-        for description in descriptions:
-            if game_time >= description.event.time:
-                print(description.event.time)
-                event_json = {}
-                event = description.event
-                event_image = event.image
-                json_event_name = 'event_'+ str(event.id)
-                url = event_image.file_field.url
-                x = event.pos_x
-                y = event.pos_y
-                description_text = description.information
-                event_json['url'] = url
-                event_json['x'] = x
-                event_json['y'] = y
-                event_json['description'] = description_text    
-                event_json['is_news'] = event.is_news
-                response_json["event_" + str(event.id)] = event_json
+
+        for event in game_events:
+
+            # Проверка свершения событий
+            if game_time < event.time:
+                continue
+
+            event_descriptions = descriptions.filter(event = event)
+            event_json = {}
+            json_event_name = 'event_'+ str(event.id)
+            event_image = event.image
+            url = event_image.file_field.url
+            x = event.pos_x
+            y = event.pos_y
+            
+            descriptions_text = []
+
+            for description in event_descriptions:
+                description = '{}: {}\n'.format(description.information.name, (description.information.text))
+                descriptions_text.append(description)
+
+            event_json['url'] = url
+            event_json['x'] = x
+            event_json['y'] = y
+            event_json['descriptions'] = descriptions_text    
+
+            event_json['is_news'] = event.is_news
+
+            response_json["event_" + str(event.id)] = event_json
+
         return JsonResponse(response_json)

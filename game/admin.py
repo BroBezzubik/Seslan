@@ -52,6 +52,7 @@ class EventImageAdmin(admin.ModelAdmin):
 @admin.register(Game_event)
 class EventAdmin(admin.ModelAdmin):
     list_display = [
+        'game',
         'name',
         'image',
         'time',

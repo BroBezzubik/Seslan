@@ -162,9 +162,11 @@ class Game {
   }
 
   public_news(event_name, data){
+    let text = '';
+    
     if (data['is_news'] == true & !this.Player.loaded_news.includes(event_name)){
       $('#news-list').append("<li class='list-group-item'><div class='news-card'>" + 
-      "<img src='" + data['url'] + "'" + " align='right'><p>" + data['description'] + "</p></div></li>");
+      "<img src='" + data['url'] + "'" + " align='right'><p>" + text.concat('\n', data['descriptions']) + "</p></div></li>");
       this.Player.loaded_news.push(event_name)
     }
     
