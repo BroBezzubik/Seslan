@@ -2,24 +2,37 @@
 <html lang="ru"> 
 <head>
     <meta charset="UTF-8">
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap-grid.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "registration/style.css" %}">
+
     <title>Login</title>
 </head>
 <body>
-    {% if form.errors %}
-    <p>Произошла ошибка!</p>
-    {% endif %}
-    <form method="POST" action="{% url 'login' %}">
-        {% csrf_token %}
-        
-        {{ form.username.label_tag}}
-        {{ form.username }}
-        
-        {{ form.username.label_tag}}
-        {{ form.password }}
+    <div class="container center">
+        {% if form.errors %}
+        <p>Произошла ошибка!</p>
+        {% endif %}
+        <form method="POST" action="{% url 'login' %}">
+            {% csrf_token %}
+            <h3>Seslan</h3>
+            <div class="field-wrapper">
+                {{ form.username.label_tag}}
+                {{ form.username }}
+            </div>
+            <div class="field-wrapper">
+                {{ form.password.label_tag}}
+                {{ form.password }}
+            </div>
+            <input type="submit" class="btn btn-primary" value="login">
+            <input type="hidden" name="next" value= "{% url 'select_game' %}">
+        </form>
+    </div>
 
-        <input type="submit" value="login">
-        <input type="hidden" name="next" value="{{ next }}">
-    </form>
+    <script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+
 </body>
 </html>
 

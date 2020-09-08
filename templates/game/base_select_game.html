@@ -6,9 +6,15 @@
 
 {% block header %}{% endblock %}
 
-{% block left-side-bar %}{% endblock %}
-
-{% block right-side-bar %}{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+        <ul>
+            {% for game in game_list %}
+                <a>Game name</a>
+            {% endfor %}
+        </ul>
+    </div>
+{%  endblock %}
 
 {% block js %} {% endblock %}
 

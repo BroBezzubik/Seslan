@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "seslan.local",
+    "127.0.0.1",
 ]
 
 

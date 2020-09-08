@@ -13,7 +13,12 @@ def index(request):
 
 
 def select_game(request):
-    return HttpResponse("OK")
+    if request.user.is_authenticated:
+        content = {}
+        response = render(request, "game/base_select_game.html", content)
+        return response
+
+    return redirect('login')
 
 
 def game(request, game_id):
