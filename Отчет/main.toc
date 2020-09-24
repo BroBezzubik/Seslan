@@ -3,12 +3,18 @@
 \contentsline {section}{\numberline {2}Аналитиеский раздел}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Seslan}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Актуальность}{6}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Аналоги}{6}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}TableTop Simulator}{6}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}TableTopia}{7}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3}Аналоги}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}TableTop Simulator}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}TableTopia}{8}{subsubsection.2.3.2}%
 \contentsline {subsubsection}{\numberline {2.3.3}Battlegrounds Gaming Engine}{8}{subsubsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.4}Вывод}{8}{subsection.2.4}%
-\contentsline {section}{\numberline {3}конструкторский раздел}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}idef0}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}ER}{11}{subsection.3.2}%
-\contentsline {section}{Список использованных источников}{12}{figure.caption.6}%
+\contentsline {subsection}{\numberline {2.4}Вывод}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Конструкторский раздел}{10}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Idef0}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}ER}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Заключение}{12}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Технологический}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Выбор средст программной реализации}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Развертывание}{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Формат данных}{15}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Заключение}{16}{section.5}%
+\contentsline {section}{Список использованных источников}{17}{Item.77}%

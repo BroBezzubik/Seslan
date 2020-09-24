@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.14)  24 SEP 2020 19:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.14)  24 SEP 2020 21:35
 entering extended mode
 **./main.tex
 (main.tex
@@ -1329,63 +1329,92 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [4
 
 
-] [5] [6] [7]
-
-LaTeX Warning: Citation `5' on page 8 undefined on input line 110.
-
-) [8]
+] [5] [6] [7] [8]) [9]
 \openout2 = `design.aux'.
 
  (design.tex
-<src/Idef0/01_A-0.png, id=177, 801.99625pt x 531.9875pt>
+<src/Idef0/01_A-0.png, id=210, 801.99625pt x 531.9875pt>
 File: src/Idef0/01_A-0.png Graphic file (type png)
 <use src/Idef0/01_A-0.png>
-Package pdftex.def Info: src/Idef0/01_A-0.png  used on input line 11.
+Package pdftex.def Info: src/Idef0/01_A-0.png  used on input line 15.
 (pdftex.def)             Requested size: 338.58632pt x 224.59402pt.
-<src/Idef0/02_A0.png, id=178, 801.99625pt x 531.9875pt>
+<src/Idef0/02_A0.png, id=211, 801.99625pt x 531.9875pt>
 File: src/Idef0/02_A0.png Graphic file (type png)
 <use src/Idef0/02_A0.png>
-Package pdftex.def Info: src/Idef0/02_A0.png  used on input line 19.
+Package pdftex.def Info: src/Idef0/02_A0.png  used on input line 23.
 (pdftex.def)             Requested size: 338.58632pt x 224.59402pt.
-<src/Idef0/03_A1.png, id=179, 801.99625pt x 531.9875pt>
+<src/Idef0/03_A1.png, id=212, 801.99625pt x 531.9875pt>
 File: src/Idef0/03_A1.png Graphic file (type png)
 <use src/Idef0/03_A1.png>
-Package pdftex.def Info: src/Idef0/03_A1.png  used on input line 27.
+Package pdftex.def Info: src/Idef0/03_A1.png  used on input line 31.
 (pdftex.def)             Requested size: 338.58632pt x 224.59402pt.
- [9
+ [10
 
 
  <./src/Idef0/01_A-0.png (PNG copy)> <./src/Idef0/02_A0.png (PNG copy)>]
-<src/Idef0/04_A2.png, id=186, 801.99625pt x 531.9875pt>
+<src/Idef0/04_A2.png, id=219, 801.99625pt x 531.9875pt>
 File: src/Idef0/04_A2.png Graphic file (type png)
 <use src/Idef0/04_A2.png>
-Package pdftex.def Info: src/Idef0/04_A2.png  used on input line 35.
+Package pdftex.def Info: src/Idef0/04_A2.png  used on input line 39.
 (pdftex.def)             Requested size: 338.58632pt x 224.59402pt.
-<src/Idef0/05_A3.png, id=187, 801.99625pt x 531.9875pt>
+<src/Idef0/05_A3.png, id=220, 801.99625pt x 531.9875pt>
 File: src/Idef0/05_A3.png Graphic file (type png)
 <use src/Idef0/05_A3.png>
-Package pdftex.def Info: src/Idef0/05_A3.png  used on input line 43.
+Package pdftex.def Info: src/Idef0/05_A3.png  used on input line 47.
 (pdftex.def)             Requested size: 338.58632pt x 224.59402pt.
- [10 <./src/Idef0/03_A1.png (PNG copy)> <./src/Idef0/04_A2.png (PNG copy)>]
-<src/ER.jpg, id=194, 990.70125pt x 701.62125pt>
+ [11 <./src/Idef0/03_A1.png (PNG copy)> <./src/Idef0/04_A2.png (PNG copy)>]
+<src/ER.jpg, id=227, 990.70125pt x 701.62125pt>
 File: src/ER.jpg Graphic file (type jpg)
 <use src/ER.jpg>
-Package pdftex.def Info: src/ER.jpg  used on input line 53.
+Package pdftex.def Info: src/ER.jpg  used on input line 59.
 (pdftex.def)             Requested size: 338.58632pt x 239.78995pt.
-) [11 <./src/Idef0/05_A3.png (PNG copy)> <./src/ER.jpg>]
+) [12 <./src/Idef0/05_A3.png (PNG copy)> <./src/ER.jpg>] [13]
 \openout2 = `techn.aux'.
 
+ (techn.tex
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
+8.
 
-No file techn.tex.
+(C:\Users\Barsi\AppData\Roaming\MiKTeX\2.9\tex/latex/cyrillic\t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+Underfull \hbox (badness 3118) in paragraph at lines 8--10
+[]\T2A/ptm/b/n/14.4 Программный про-дукт ре-а-ли-зо-ван на python 3.6 с ис-поль
+-зо-ва-ние
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 8--10
+\T2A/ptm/b/n/14.4 Django 3.8.5 [[]$\T2A/cmtt/m/n/14.4 https : / / www . djangop
+roject . com/$[]\T2A/ptm/b/n/14.4 ] и postrgreSQL[[]$\T2A/cmtt/m/n/14.4 https :
+ / /
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 8--10
+\T2A/ptm/b/n/14.4 IDEI [[]$\T2A/cmtt/m/n/14.4 https : / / www . jetbrains . com
+ / pycharm / download / #section = windows$[]\T2A/ptm/b/n/14.4 ].
+ []
+
+[14
+
+
+]) [15]
 \openout2 = `exper.aux'.
+
 
 No file exper.tex.
 \openout2 = `concl.aux'.
 
-No file concl.tex.
+(concl.tex) [16
+
+
+
+
+]
 \openout2 = `biblist.aux'.
 
-(biblist.tex
+ (biblist.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 []\T2A/ptm/b/n/14.4 Аналоги и аль-тер-на-ти-вы TableTop си-му-ля-то-ру URL: $\O
 ML/cmm/m/it/14.4 http \OT1/cmr/m/n/14.4 :
@@ -1398,30 +1427,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]\T2A/ptm/b/n/14.4 BGE in a Nutshell $\OML/cmm/m/it/14.4 ==$ \T2A/ptm/b/n/14.4
+ URL : $\OML/cmm/m/it/14.4 http \OT1/cmr/m/n/14.4 :
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 19--20
 []\T2A/ptm/b/n/14.4 Soft skills and it's application in work place $\OML/cmm/m/
 it/14.4 ==$ \T2A/ptm/b/n/14.4 URL: $\OML/cmm/m/it/14.4 https \OT1/cmr/m/n/14.4 
 :
  []
 
 
-Overfull \hbox (77.10844pt too wide) in paragraph at lines 17--18
+Overfull \hbox (77.10844pt too wide) in paragraph at lines 19--20
 \OML/cmm/m/it/14.4 ==www:researchgate:net=publication=\OT1/cmr/m/n/14.4 3371818
 06[]\OML/cmm/m/it/14.4 oft[]kills[]nd[]ts[]pplication[]n[]ork[]lace$
  []
 
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
-19.
-(C:\Users\Barsi\AppData\Roaming\MiKTeX\2.9\tex/latex/cyrillic\t2acmtt.fd
-File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-))
-[12
-
-
-
-
-
-
+) [17
 
 
 ]
@@ -1439,25 +1463,28 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
 (techn.aux) (exper.aux) (concl.aux) (biblist.aux) (supplement.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 09455FF6056FCE44080067C4B7518BDE;1931.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D470F040002A39900517BDB3AF4A557B;2886
+(rerunfilecheck)             After:  815B21C3F7F5FFB987411AEFAE7B9F0E;3010.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 43.
  ) 
 Here is how much of TeX's memory you used:
- 37265 strings out of 480934
- 805103 string characters out of 2915757
+ 37314 strings out of 480934
+ 805645 string characters out of 2915757
  1174729 words of memory out of 3000000
- 52290 multiletter control sequences out of 15000+200000
+ 52300 multiletter control sequences out of 15000+200000
  540708 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,7n,98p,724b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,6n,98p,1226b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Barsi\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
 tt1440.pk> <C:\Users\Barsi\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/d
 pi600\larm1440.pk> <C:\Users\Barsi\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/
@@ -1465,9 +1492,9 @@ lh-t2a/dpi600\larm2074.pk><E:/soft/Miktex/fonts/type1/public/amsfonts/cm/cmmi10
 .pfb><E:/soft/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/soft/Miktex/
 fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/soft/Miktex/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb>
-Output written on main.pdf (12 pages, 518793 bytes).
+Output written on main.pdf (17 pages, 550174 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 93 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 558 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,47 @@
+\newpage
+\section{Технологический}
+В данном разделе приводятся средства программной реализации, описываются развертывание, указываются формат данных, входных и выходных файлов, приводится пользовательский интерфейс
+программы.
+
+\subsection{Выбор средст программной реализации}
+	
+	Программный продукт реализован на python 3.6 с использование Django 3.8.5 [\url{https://www.djangoproject.com/}] и postrgreSQL[\url{https://www.postgresql.org/}] в качестве базы данных. PyCharm 2020.2.02 в качестве IDEI [\url{https://www.jetbrains.com/pycharm/download/#section=windows}]. Така я студент, мне была предоставленна полная версия.
+	Данное компоновка обеспечивает легкий перенос на другую платформу. Удобство разработки и по причине опыта работы с Django.
+	
+\subsection{Развертывание}
+
+	Для того что бы развернуть данную систему необходимо выполнить следующие шаги:
+	\begin{enumerate}
+		\item Установить и настроить python
+		\begin{enumerate}
+			\item Скачать и установить python 3.8.5;
+			\item Установить pip последней версии;
+			\item Установить все необходимые библиотеки из requirements.txt.
+		\end{enumerate}
+		\item Установить и настроить postgreSQL
+		\begin{enumerate}
+			\item Скачать и установить postgreSQL;
+			\item Для удобства так же установить pgAdmin;
+			\item Создать пользователя и пароль;
+			\item Создать базу данных под названием $Seslan\_db$
+		\end{enumerate}
+		\item Обновить настройки для django
+		\begin{enumerate}
+			\item Выставить пароль и логин для подключения к базе данных.
+			\item Выполнить команды:
+			\begin{enumerate}
+				\item python manage.py migrate
+				\item python manage.py collectstatic
+				\item python manage.py createsuperuser - с помощью данной команды создается запись админа.
+			\end{enumerate}
+			\item Python manage.py runserver
+		\end{enumerate}
+	\end{enumerate}
+
+\subsection{Формат данных}
+
+	Программа принимает на вход данные полученные от пользователя с клиентского интерфейса. Данные могут представлены в виде изображений, текста либо чисел. Для общения между клиентом и сервером используется формат данных под названием JSON.
+
+	\begin{enumerate}
+		\item 
+	\end{enumerate}
